@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -31,27 +32,157 @@ export default function Home() {
             </p>
             <div className="flex space-x-2 items-end justify-end mr-24 mb-10">
               <h3 className="text-xl text-gray-light text-right inline-block">
-                Know {<br />}About Us
+                Conoce {<br />}Sobre Nosotros
               </h3>
               <span className="inline-block">
-                <img 
-                className="pb-2"
-                src="/images/check.svg"
-                alt="logo"
-                width='37'
-                />
+                <a href="#">
+                  <img
+                    className="pb-2"
+                    src="/images/check.svg"
+                    alt="logo"
+                    width="37"
+                  />
+                </a>
               </span>
             </div>
           </div>
+          {/** divider  */}
           <div className="divide-y divide-solid divide-gray">
             <div></div>
             <div></div>
           </div>
 
+          <div className="grid grid-cols-1">
+            <div className="flex justify-center mt-40">
+              <img
+                className="pb-2"
+                src="/images/sofa.png"
+                alt="logo"
+                width="100"
+              />
+            </div>
+            <p className="text-center text-2xl text-brown font-light px-52 mt-12 mb-40">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            {/** divider  */}
+            <div className="divide-y divide-solid divide-gray">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div className="flex justify-center mt-14">
+            <h1 className="text-5xl mb-5">Nuestros Servicios</h1>
+          </div>
+          <div className="grid grid-cols-2 px-36 mb-30 justify-items-center">
+            <div className="m-10">
+              <h1 className="text-2xl text-center font-semibold">
+                Lorem Ipsum
+              </h1>
+              <p className="text-center font-light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div className="m-10">
+              <h1 className="text-2xl text-center font-semibold">
+                Lorem Ipsum
+              </h1>
+              <p className="text-center font-light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div className="m-10">
+              <h1 className="text-2xl text-center font-semibold">
+                Lorem Ipsum
+              </h1>
+              <p className="text-center font-light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div className="m-10">
+              <h1 className="text-2xl text-center font-semibold">
+                Lorem Ipsum
+              </h1>
+              <p className="text-center font-light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+          {/** divider  */}
+          <div className="divide-y divide-solid divide-gray mt-10 mb-20">
+            <div></div>
+            <div></div>
+          </div>
+
+          <div className="flex justify-center mt-14">
+            <h1 className="text-5xl mb-5">Última Colección</h1>
+          </div>
+          <div className="grid grid-cols-2 justify-items-center">
+            <div className="justify-self-end flex flex-wrap">
+              <div className="flex items-center mt-14">
+                <Link href="#" onClick={console.log(1)}>
+                  <img
+                    className="arrow relative pb-2 inline-block -mr-5 z-10 rotate-180"
+                    src="/images/arrow.svg"
+                    alt="logo"
+                    width="50"
+                  />
+                </Link>
+                <img
+                  className="relative picture2 rounded-full z-0 inline-block"
+                  src="./images/table.jpg"
+                  alt="main image"
+                />
+                <Link href="#" onClick={() => console.log(1)}>
+                  <img
+                    className="arrow relative pb-2 inline-block -ml-5 z-10"
+                    src="/images/arrow.svg"
+                    alt="logo"
+                    width="50"
+                  />
+                </Link>
+              </div>
+            </div>
+            <div className="justify-self-center flex items-center">
+              <div className="flex space-x-2 items-end justify-end mr-24 mb-10">
+                <h3 className="text-xl text-gray-light text-right inline-block">
+                  Explora {<br />}Nuestros{<br />} Productos
+                </h3>
+                <span className="inline-block">
+                  <a href="#">
+                    <img
+                      className="pb-2"
+                      src="/images/check.svg"
+                      alt="logo"
+                      width="37"
+                    />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          {/** divider  */}
+          <div className="divide-y divide-solid divide-gray mt-20 mb-20">
+            <div></div>
+            <div></div>
+          </div>
+
+          <div className="flex justify-center mt-14">
+            <h1 className="text-5xl mb-5 text-brown">Preguntas Frecuentes</h1>
+          </div>
         </div>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 "></footer>
+      <footer className="flex items-center justify-center w-full h-24"></footer>
     </div>
   );
 }

@@ -6,6 +6,14 @@
     font-family: "Magnat Text";
     src: local("Magnat"), url(./fonts/Magnat-HeadRegular.ttf) format("ttf");
   }
+  @font-face {
+    font-family: "Magnat Text";
+    src: local("Magnat"), url(./fonts/Magnat-HeadLight.ttf) format("ttf");
+  }
+  @font-face {
+    font-family: "Magnat Text";
+    src: local("Magnat"), url(./fonts/Magnat-HeadSemiBold.ttf) format("ttf");
+  }
 }
 
 @tailwind utilities;
@@ -16,4 +24,17 @@
   object-fit:cover;
   object-position: 60% 50%;
   opacity: 0.78;
+}
+
+
+.picture2 {
+  height: 32rem;
+  width: 21rem;
+  object-fit:cover;
+  object-position: 60% 50%;
+  opacity: 0.78;
+}
+
+.arrow {
+  cursor: pointer;
 }
