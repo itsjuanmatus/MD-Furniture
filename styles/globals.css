@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+
+@layer base {
+  @font-face {
+    font-family: "Magnat Text";
+    src: local("Magnat"), url(./fonts/Magnat-HeadRegular.ttf) format("ttf");
+  }
+}
+
+@tailwind utilities;
