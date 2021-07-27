@@ -1,8 +1,34 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Accordion from "../components/accordion";
 
 export default function Home() {
+  const accordionData = [
+    {
+      title: "¿En dónde están ubicados?",
+      content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
+      laborum cupiditate possimus labore, hic temporibus velit dicta earum
+      suscipit commodi eum enim atque at? Et perspiciatis dolore iure
+      voluptatem.`,
+    },
+    {
+      title: "¿Se pueden personalizar?",
+      content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
+      reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
+      quaerat iure quos dolorum accusantium ducimus in illum vero commodi
+      pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
+      quidem maiores doloremque est numquam praesentium eos voluptatem amet!
+      Repudiandae, mollitia id reprehenderit a ab odit!`,
+    },
+    {
+      title: "¿Realizan envíos internacionales?",
+      content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
+      quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
+      dolor ut sequi minus iste? Quas?`,
+    },
+  ];
+
   return (
     <div className="min-h-screen py-2 bg-gray-lightest">
       <Head>
@@ -118,7 +144,7 @@ export default function Home() {
             </div>
           </div>
           {/** divider  */}
-          <div className="divide-y divide-solid divide-gray mt-10 mb-20">
+          <div className="divide-y divide-solid divide-gray mt-10 mb-10">
             <div></div>
             <div></div>
           </div>
@@ -176,8 +202,18 @@ export default function Home() {
             <div></div>
           </div>
 
-          <div className="flex justify-center mt-14">
-            <h1 className="text-5xl mb-5 text-brown">Preguntas Frecuentes</h1>
+          <div className="flex justify-center">
+            <h1 className="text-5xl text-brown">Preguntas Frecuentes</h1>
+          </div>
+          <div className="grid grid-cols-1 mt-16 px-60">
+            {accordionData.map(({ title, content }) => (
+              <Accordion title={title} content={content} />
+            ))}
+          </div>
+          {/** divider  */}
+          <div className="divide-y divide-solid divide-gray mt-20 mb-20">
+            <div></div>
+            <div></div>
           </div>
         </div>
       </main>
