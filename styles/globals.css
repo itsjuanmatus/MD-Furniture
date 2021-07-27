@@ -9,3 +9,11 @@
 }
 
 @tailwind utilities;
+
+.picture {
+  height: 48rem;
+  width: 32rem;
+  object-fit:cover;
+  object-position: 60% 50%;
+  opacity: 0.78;
+}

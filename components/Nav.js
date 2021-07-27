@@ -6,7 +6,7 @@ export default function Nav() {
   return (
     <nav className="bg-gray-lightest min-w-max">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-36 min-w-max">
+        <div className="flex h-44 min-w-max">
           <div className="flex items-center m-auto">
             <div className="hidden md:block">
               <div className="flex space-x-10 min-w-full items-center">
