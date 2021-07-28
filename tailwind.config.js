@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
@@ -15,10 +17,18 @@ module.exports = {
         DEFAULT: "#24221F",
       },
       brown: {
-        DEFAULT: "#3C3231"
-      }
+        dark: "#282828",
+        DEFAULT: "#3C3231",
+        light: "#D7D7D7",
+      },
+      white: {
+        DEFAULT: "#FFFFFF",
+      },
+      transparent: 'transparent',
+      current: 'currentColor',
     },
     extend: {
+      
       fontFamily: {
         sans: ["Magnat Text"],
       },

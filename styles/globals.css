@@ -18,19 +18,47 @@
 
 @tailwind utilities;
 
-.picture {
-  height: 48rem;
-  width: 32rem;
-  object-fit:cover;
-  object-position: 60% 50%;
-  opacity: 0.78;
+{/*mobile*/}
+@media only screen and (min-device-width: 305px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .picture {
+    height: 25rem;
+    width: 18rem;
+    object-fit: cover;
+    object-position: 60% 50%;
+    opacity: 0.78;
+  }
 }
 
+{/*tablet*/}
+@media only screen and (min-device-width: 668px) 
+and (max-device-width: 1024px) 
+and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 1) {
+  .picture {
+    height: 18rem;
+    width: 32rem;
+    object-fit: cover;
+    object-position: 60% 50%;
+    opacity: 0.78;
+  }
+}
+
+{/*laptop*/}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 2800px) and (-webkit-min-device-pixel-ratio: 1) {
+  .picture {
+    height: 48rem;
+    width: 32rem;
+    object-fit: cover;
+    object-position: 60% 50%;
+    opacity: 0.78;
+  }
+}
 
 .picture2 {
   height: 32rem;
   width: 21rem;
-  object-fit:cover;
+  object-fit: cover;
   object-position: 60% 50%;
   opacity: 0.78;
 }

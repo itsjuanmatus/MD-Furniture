@@ -4,29 +4,29 @@ import { Transition } from "@headlessui/react";
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-gray-lightest min-w-max">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-44 min-w-max">
+    <nav className="bg-gray-lightest w-screen overflow-hidden z-0">
+      <div className="w-full mx-auto">
+        <div className="flex h-44 w-full px-5">
           <div className="flex items-center m-auto">
             <div className="hidden md:block">
-              <div className="flex space-x-10 min-w-full items-center">
+              <div className="flex lg:space-x-10 min-w-full items-center">
                 <a
                   href="#"
-                  className="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-xl font-medium"
+                  className="text-brown px-3 py-2 rounded-md text-xl font-medium"
                 >
                   Inicio
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
+                  className="text-brown px-3 py-2 rounded-md text-xl font-medium"
                 >
                   Nosotros
                 </a>
 
                 <div className="flex-shrink-0">
                   <img
-                    className="h-20 w-20 mx-52"
+                    className="h-20 w-20 md:mx-36 lg:mx-52"
                     src="./images/logo.svg"
                     alt="logo"
                   />
@@ -34,21 +34,27 @@ export default function Nav() {
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
+                  className="text-brown px-3 py-2 rounded-md text-xl font-medium"
                 >
                   Servicios
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
+                  className="text-brown px-3 py-2 rounded-md text-xl font-medium"
                 >
                   Contacto
                 </a>
               </div>
             </div>
           </div>
-          <div className="-mr-2 flex md:hidden">
+          <div className="-mr-2 flex items-center justify-between md:hidden w-full">
+            <img
+              className="h-20 w-20 md:mx-36 lg:mx-52"
+              src="./images/logo.svg"
+              alt="logo"
+            />
+
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
@@ -63,7 +69,7 @@ export default function Nav() {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  stroke="black"
                   aria-hidden="true"
                 >
                   <path
@@ -79,7 +85,7 @@ export default function Nav() {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  stroke="black"
                   aria-hidden="true"
                 >
                   <path
@@ -109,35 +115,35 @@ export default function Nav() {
             <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a
                 href="#"
-                className="text-sm text-black block px-3 py-2 rounded-md text-base font-normal"
+                className="text-brown block px-3 py-2 rounded-md text-base font-medium"
               >
                 Dashboard
               </a>
 
               <a
                 href="#"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="text-brown block px-3 py-2 rounded-md text-base font-medium"
               >
                 Team
               </a>
 
               <a
                 href="#"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="text-brown block px-3 py-2 rounded-md text-base font-medium"
               >
                 Projects
               </a>
 
               <a
                 href="#"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="text-brown block px-3 py-2 rounded-md text-base font-medium"
               >
                 Calendar
               </a>
 
               <a
                 href="#"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="text-brown block px-3 py-2 rounded-md text-base font-medium"
               >
                 Reports
               </a>

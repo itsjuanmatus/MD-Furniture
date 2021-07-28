@@ -12,14 +12,12 @@ const Accordion = ({ title, content }) => {
           setIsActive(!isActive);
         }}
       >
-        <h2 className="text-2xl">
-          <button>{title}</button>
-        </h2>
+        <button className="text-left text-2xl">{title}</button>
         <div className="divide-y divide-solid divide-gray my-5">
           <div></div>
           <div></div>
         </div>
-        <button className="text-2xl">{isActive ? "-" : "+"}</button>
+        <button className="text-xl lg:text-2xl min-w-max">{isActive ? "-" : "+"}</button>
       </div>
       {isActive && (
         <div className="accordion-content">
