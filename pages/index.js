@@ -4,6 +4,7 @@ import Link from "next/link";
 import Accordion from "../components/accordion";
 import { useState } from "react";
 import { useRouter } from "next/dist/client/router";
+import Table from "../public/images/table.jpg"
 
 export default function Home() {
   const router = useRouter();
@@ -58,18 +59,20 @@ export default function Home() {
       <main className="w-full mx-auto px-6 sm:px-6 lg:px-28 -mt-10">
         <div className="grid grid-cols-1">
           <div className="m-auto">
-            <h1 className="z-20 relative text-5xl lg:text-8xl text-center text-brown mt-10 lg:px-96">
+            <h1 className="z-20 relative text-5xl lg:text-8xl text-center text-brown mt-10 md:px-44 lg:px-96">
               Una idea para un mejor mañana
             </h1>
-            <div className="flex flex-wrap justify-center ">
-              <img
-                className="relative picture rounded-full -mt-10 z-0 mb-28 "
-                src="./images/table.jpg"
+            <div className="grid -mt-10 z-0 mb-28 px-96">
+              <Image
+                className="picture relative rounded-full"
+                src={Table}
                 alt="main image"
+                layout='responsive'
+                objectFit='contain'
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 mb-20 lg:px-96">
+          <div className="grid grid-cols-1 lg:grid-cols-2 mb-20 md:px-24 lg:px-96">
             <p className="flex items-end text-xl text-gray-light mr-24">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
@@ -106,7 +109,7 @@ export default function Home() {
                 width="100"
               />
             </div>
-            <p className="text-center text-2xl text-brown font-light lg:px-96 lg:mx-36 mt-6 lg:mt-12 mb-20 lg:mb-40">
+            <p className="text-center text-2xl text-brown font-light md:px-32 lg:px-96 lg:mx-36 mt-6 lg:mt-12 mb-20 lg:mb-40">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
               ipsum dolor sit amet, consectetur adipiscing elit.
@@ -231,7 +234,7 @@ export default function Home() {
               Preguntas Frecuentes
             </h1>
           </div>
-          <div className="grid grid-cols-1 mt-16 lg:mx-96 lg:px-24">
+          <div className="grid grid-cols-1 mt-16 lg:mx-96 md:px-12 lg:px-24">
             {accordionData.map(({ title, content }) => (
               <Accordion title={title} content={content} />
             ))}
@@ -251,7 +254,7 @@ export default function Home() {
 
         <form
           onSubmit={handleSubmit}
-          className="grid grid-cols-1 justify-items-center mt-20 lg:px-96 lg:mx-24 gap-y-3"
+          className="grid grid-cols-1 justify-items-center mt-20 lg:px-96 md:mx-12 lg:mx-24 gap-y-3"
         >
           <input
             className="w-full rounded-lg text-xl lg:text-2xl text-brown pl-4 my-2 py-5 bg-brown-light placeholder-brown"
@@ -300,26 +303,34 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="max-w-7xl mx-auto sm:px-6 lg:px-28 bg-brown-dark min-w-full">
-        <div className="grid grid-cols-1 justify-items-start py-5 px-8">
-          <img
-            className="h-20 w-20 mb-5"
-            src="./images/logo-white.svg"
-            alt="logo"
-          />
-          <h1 className="text-lg text-white mb-2">+505 1111 0000</h1>
-          <h1 className="text-lg text-white mb-4">Managua, Nicaragua</h1>
-          <div className="inline-flex space-x-4">
+      <footer className="max-w-7xl mx-auto sm:px-6 lg:px-28 bg-brown-dark min-w-full py-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-items-start py-5 px-8 md:space-x-8 lg:space-x-8 space-y-8">
+          <div>
             <img
-              className="h-10 w-10 mb-5"
-              src="./images/instagram.svg"
+              className="h-20 w-20 mb-5"
+              src="./images/logo-white.svg"
               alt="logo"
             />
-            <img
-              className="h-10 w-10 mb-5"
-              src="./images/facebook.svg"
-              alt="logo"
-            />
+            <h1 className="text-lg text-white mb-2">+505 1111 0000</h1>
+            <h1 className="text-lg text-white mb-4">Managua, Nicaragua</h1>
+            <div className="inline-flex space-x-4">
+              <img
+                className="h-10 w-10 mb-5"
+                src="./images/instagram.svg"
+                alt="logo"
+              />
+              <img
+                className="h-10 w-10 mb-5"
+                src="./images/facebook.svg"
+                alt="logo"
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-1 justify-items-start">
+            <a className="text-white text-xl py-1" href="#">Inicio</a>
+            <a className="text-white text-xl py-1" href="#">Nosotros</a>
+            <a className="text-white text-xl py-1" href="#">Servicios</a>
+            <a className="text-white text-xl py-1" href="#">Contacto</a>
           </div>
         </div>
       </footer>

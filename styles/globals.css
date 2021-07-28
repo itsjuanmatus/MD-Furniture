@@ -40,8 +40,8 @@ and (max-device-width: 1024px)
 and (orientation: portrait) 
 and (-webkit-min-device-pixel-ratio: 1) {
   .picture {
-    height: 18rem;
-    width: 32rem;
+    height: 28rem;
+    width: 22rem;
     object-fit: cover;
     object-position: 60% 50%;
     opacity: 0.78;
