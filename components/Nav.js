@@ -11,7 +11,7 @@ export default function Nav() {
             <div className="hidden md:block">
               <div className="flex lg:space-x-0 min-w-full items-center">
                 <a
-                  href="#inicio"
+                  href="#"
                   className="text-brown px-3 py-2 rounded-md text-xl lg:text-2xl font-medium"
                 >
                   Inicio
@@ -119,35 +119,28 @@ export default function Nav() {
                 href="#"
                 className="text-brown block px-3 py-2 rounded-md text-base font-medium"
               >
-                Dashboard
+                Inicio
               </a>
 
               <a
-                href="#"
+                href="#nosotros"
                 className="text-brown block px-3 py-2 rounded-md text-base font-medium"
               >
-                Team
+                Nosotros
               </a>
 
               <a
-                href="#"
+                href="#servicios"
                 className="text-brown block px-3 py-2 rounded-md text-base font-medium"
               >
-                Projects
+                Servicios
               </a>
 
               <a
-                href="#"
+                href="#contacto"
                 className="text-brown block px-3 py-2 rounded-md text-base font-medium"
               >
-                Calendar
-              </a>
-
-              <a
-                href="#"
-                className="text-brown block px-3 py-2 rounded-md text-base font-medium"
-              >
-                Reports
+                Contacto
               </a>
             </div>
           </div>
