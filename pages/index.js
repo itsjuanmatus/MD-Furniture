@@ -3,6 +3,7 @@ import Link from "next/link";
 import Faq from "../components/Faq";
 import { useState } from "react";
 import { useRouter } from "next/dist/client/router";
+import Slider from "../components/Slider";
 
 export default function Home() {
   const router = useRouter();
@@ -47,15 +48,21 @@ export default function Home() {
     },
   ];
 
+  const images = [
+    "./images/table.jpg",
+    "./images/chair.jpg",
+    "./images/bed.jpg",
+  ];
+
   return (
     <div className="min-h-screen bg-gray-lightest w-screen overflow-hidden z-20">
       <Head>
         <title>MD Furniture</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <main className="w-full mx-auto px-6 sm:px-6 lg:px-28 -mt-10">
-        <div className="grid grid-cols-1 justify-items-center">
+        <div className="grid grid-cols-1 justify-items-center" id='inicio'>
           <div className="">
             <h1 className="z-20 relative text-5xl lg:text-8xl text-center text-brown mt-10 md:px-44 lg:px-72 xl:px-96">
               Una idea para un mejor mañana
@@ -63,18 +70,18 @@ export default function Home() {
             <div className="flex justify-center -mt-10 z-0 mb-28 lg:px-96">
               <img
                 className="picture relative rounded-full"
-                src='./images/table.jpg'
+                src="./images/table.jpg"
                 alt="main image"
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 mb-20 md:px-24 lg:px-96">
-            <p className="flex items-end text-xl text-gray-light mr-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 mb-20">
+            <p className="flex items-end text-xl text-gray-light mr-24 md:mx-24 lg:mx-36">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
               ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <div className="flex space-x-2 items-end justify-end mr-24 lg:mb-10 lg:mt-0 mt-10">
+            <div className="flex space-x-2 items-end justify-end mr-24 lg:mb-10 lg:mt-0 mt-10 lg:mr-72">
               <h3 className="text-xl text-gray-light text-right inline-block">
                 Conoce {<br />}Sobre Nosotros
               </h3>
@@ -91,12 +98,12 @@ export default function Home() {
             </div>
           </div>
           {/** divider  */}
-          <div className="divide-y divide-solid divide-gray">
+          <div className="divide-y divide-solid divide-gray w-full">
             <div></div>
             <div></div>
           </div>
 
-          <div className="grid grid-cols-1">
+          <div className="grid grid-cols-1" id='nosotros'>
             <div className="flex justify-center mt-20 lg:mt-40">
               <img
                 className="pb-2"
@@ -111,12 +118,12 @@ export default function Home() {
               ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             {/** divider  */}
-            <div className="divide-y divide-solid divide-gray">
+            <div className="divide-y divide-solid divide-gray w-full">
               <div></div>
               <div></div>
             </div>
           </div>
-          <div className="flex justify-center items-center mt-14">
+          <div className="flex justify-center items-center mt-14" id='servicios'>
             <h1 className="z-20 relative text-5xl lg:text-6xl text-center text-brown-dark mt-10 ">
               Nuestros Servicios
             </h1>
@@ -165,7 +172,7 @@ export default function Home() {
             </div>
           </div>
           {/** divider  */}
-          <div className="divide-y divide-solid divide-gray mt-20 mb-20">
+          <div className="divide-y divide-solid divide-gray mt-20 mb-20 w-full">
             <div></div>
             <div></div>
           </div>
@@ -176,31 +183,7 @@ export default function Home() {
             </h1>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-items-center lg:space-x-24">
-            <div className="justify-self-start lg:justify-self-end flex flex-wrap">
-              <div className="flex items-center mt-14 px-10 -ml-9 mb-16 lg:-mr-24">
-                <Link href="#" onClick={console.log(1)}>
-                  <img
-                    className="arrow relative pb-2 inline-block -mr-5 z-10 rotate-180"
-                    src="/images/arrow.svg"
-                    alt="logo"
-                    width="50"
-                  />
-                </Link>
-                <img
-                  className="relative picture2 rounded-full z-0 inline-block"
-                  src="./images/table.jpg"
-                  alt="main image"
-                />
-                <Link href="#" onClick={() => console.log(1)}>
-                  <img
-                    className="arrow relative pb-2 inline-block -ml-5 z-10"
-                    src="/images/arrow.svg"
-                    alt="logo"
-                    width="50"
-                  />
-                </Link>
-              </div>
-            </div>
+            <Slider images={images} />
             <div className="justify-self-center flex items-center lg:justify-self-start">
               <div className="flex space-x-2 items-end justify-end lg:mr-24 mb-10">
                 <h3 className="text-xl text-gray-light text-right inline-block">
@@ -220,7 +203,7 @@ export default function Home() {
             </div>
           </div>
           {/** divider  */}
-          <div className="divide-y divide-solid divide-gray mt-20 mb-20">
+          <div className="divide-y divide-solid divide-gray mt-20 mb-20 w-full">
             <div></div>
             <div></div>
           </div>
@@ -230,19 +213,19 @@ export default function Home() {
               Preguntas Frecuentes
             </h1>
           </div>
-          <div className="grid grid-cols-1 mt-16 lg:mx-96 md:px-12 lg:px-24">
+          <div className="grid grid-cols-1 mt-16 lg:mx-96 md:px-12 lg:px-24 xl:px-24">
             {accordionData.map(({ title, content }) => (
               <Faq title={title} content={content} />
             ))}
           </div>
           {/** divider  */}
-          <div className="divide-y divide-solid divide-gray mt-20 mb-20">
+          <div className="divide-y divide-solid divide-gray mt-20 mb-20 w-full">
             <div></div>
             <div></div>
           </div>
         </div>
 
-        <div className="flex justify-center items-center mt-14">
+        <div className="flex justify-center items-center mt-14" id='contacto'>
           <h1 className="z-20 relative text-5xl lg:text-6xl text-center text-brown-dark mt-10">
             Contáctanos
           </h1>
@@ -323,10 +306,18 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-cols-1 justify-items-start">
-            <a className="text-white text-xl py-1" href="#">Inicio</a>
-            <a className="text-white text-xl py-1" href="#">Nosotros</a>
-            <a className="text-white text-xl py-1" href="#">Servicios</a>
-            <a className="text-white text-xl py-1" href="#">Contacto</a>
+            <a className="text-white text-xl py-1" href="#">
+              Inicio
+            </a>
+            <a className="text-white text-xl py-1" href="#nosotros">
+              Nosotros
+            </a>
+            <a className="text-white text-xl py-1" href="#servicios">
+              Servicios
+            </a>
+            <a className="text-white text-xl py-1" href="#contacto">
+              Contacto
+            </a>
           </div>
         </div>
       </footer>

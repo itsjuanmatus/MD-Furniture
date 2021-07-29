@@ -11,36 +11,38 @@ export default function Nav() {
             <div className="hidden md:block">
               <div className="flex lg:space-x-0 min-w-full items-center">
                 <a
-                  href="#"
+                  href="#inicio"
                   className="text-brown px-3 py-2 rounded-md text-xl lg:text-2xl font-medium"
                 >
                   Inicio
                 </a>
 
                 <a
-                  href="#"
+                  href="#nosotros"
                   className="text-brown px-3 py-2 rounded-md text-xl lg:text-2xl font-medium"
                 >
                   Nosotros
                 </a>
 
-                <div className="flex-shrink-0">
-                  <img
-                    className="h-20 w-20 md:mx-28 lg:mx-52"
-                    src="./images/logo.svg"
-                    alt="logo"
-                  />
-                </div>
+                <a href="#">
+                  <div className="flex-shrink-0">
+                    <img
+                      className="h-20 w-20 md:mx-28 lg:mx-52"
+                      src="./images/logo.svg"
+                      alt="logo"
+                    />
+                  </div>
+                </a>
 
                 <a
-                  href="#"
+                  href="#servicios"
                   className="text-brown px-3 py-2 rounded-md text-xl lg:text-2xl font-medium"
                 >
                   Servicios
                 </a>
 
                 <a
-                  href="#"
+                  href="#contacto"
                   className="text-brown px-3 py-2 rounded-md text-xl lg:text-2xl  font-medium"
                 >
                   Contacto
