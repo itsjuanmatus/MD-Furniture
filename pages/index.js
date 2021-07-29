@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import Accordion from "../components/Faq";
+import Faq from "../components/Faq";
 import { useState } from "react";
 import { useRouter } from "next/dist/client/router";
 
