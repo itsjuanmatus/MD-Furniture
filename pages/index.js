@@ -62,7 +62,7 @@ export default function Home() {
       </Head>
 
       <main className="w-full mx-auto px-6 sm:px-6 lg:px-28 -mt-10">
-        <div className="grid grid-cols-1 justify-items-center" id='inicio'>
+        <div className="grid grid-cols-1 justify-items-center" id="inicio">
           <div className="">
             <h1 className="z-20 relative text-5xl lg:text-8xl text-center text-brown mt-10 md:px-44 lg:px-72 xl:px-96">
               Una idea para un mejor mañana
@@ -103,7 +103,7 @@ export default function Home() {
             <div></div>
           </div>
 
-          <div className="grid grid-cols-1" id='nosotros'>
+          <div className="grid grid-cols-1" id="nosotros">
             <div className="flex justify-center mt-20 lg:mt-40">
               <img
                 className="pb-2"
@@ -123,7 +123,10 @@ export default function Home() {
               <div></div>
             </div>
           </div>
-          <div className="flex justify-center items-center mt-14" id='servicios'>
+          <div
+            className="flex justify-center items-center mt-14"
+            id="servicios"
+          >
             <h1 className="z-20 relative text-5xl lg:text-6xl text-center text-brown-dark mt-10 ">
               Nuestros Servicios
             </h1>
@@ -225,7 +228,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex justify-center items-center mt-14" id='contacto'>
+        <div className="flex justify-center items-center mt-14" id="contacto">
           <h1 className="z-20 relative text-5xl lg:text-6xl text-center text-brown-dark mt-10">
             Contáctanos
           </h1>
@@ -293,16 +296,20 @@ export default function Home() {
             <h1 className="text-lg text-white mb-2">+505 1111 0000</h1>
             <h1 className="text-lg text-white mb-4">Managua, Nicaragua</h1>
             <div className="inline-flex space-x-4">
-              <img
-                className="h-10 w-10 mb-5"
-                src="./images/instagram.svg"
-                alt="logo"
-              />
-              <img
-                className="h-10 w-10 mb-5"
-                src="./images/facebook.svg"
-                alt="logo"
-              />
+              <a href="http://instagram.com" target="_blank">
+                <img
+                  className="h-10 w-10 mb-5"
+                  src="./images/instagram.svg"
+                  alt="logo"
+                />
+              </a>
+              <a href="http://facebook.com" target="_blank">
+                <img
+                  className="h-10 w-10 mb-5"
+                  src="./images/facebook.svg"
+                  alt="logo"
+                />
+              </a>
             </div>
           </div>
           <div className="grid grid-cols-1 justify-items-start">
