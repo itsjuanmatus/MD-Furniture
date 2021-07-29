@@ -10,17 +10,17 @@ body {
 @layer base {
   @font-face {
     font-family: "MagnatText";
-    src: local("Magnat"), url(../fonts/MagnatText/Magnat-HeadRegular.ttf) format("truetype");
+    src: url(../fonts/MagnatText/Magnat-HeadRegular.ttf) format("truetype");
     font-weight: normal;
   }
   @font-face {
     font-family: "MagnatText";
-    src: local("Magnat"), url(../fonts/MagnatText/Magnat-HeadLight.ttf) format("truetype");
+    src: url(../fonts/MagnatText/Magnat-HeadLight.ttf) format("truetype");
     font-weight: lighter;
   }
   @font-face {
     font-family: "MagnatText";
-    src: local("Magnat"), url(../fonts/MagnatText/Magnat-HeadSemiBold.ttf) format("truetype");
+    src: url(../fonts/MagnatText/Magnat-HeadSemiBold.ttf) format("truetype");
     font-weight: bold;
   }
 }
