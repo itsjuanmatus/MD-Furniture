@@ -27,4 +27,4 @@ const Faq = ({ title, content }) => {
   );
 };
 
-export default Accordion;
+export default Faq;
