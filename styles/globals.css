@@ -9,15 +9,15 @@ html, body {
 @layer base {
   @font-face {
     font-family: "Magnat Text";
-    src: local("Magnat"), url(./fonts/Magnat-HeadRegular.ttf) format("ttf");
+    src: local("Magnat"), url(../fonts/Magnat-HeadRegular.ttf) format("ttf");
   }
   @font-face {
     font-family: "Magnat Text";
-    src: local("Magnat"), url(./fonts/Magnat-HeadLight.ttf) format("ttf");
+    src: local("Magnat"), url(../fonts/Magnat-HeadLight.ttf) format("ttf");
   }
   @font-face {
     font-family: "Magnat Text";
-    src: local("Magnat"), url(./fonts/Magnat-HeadSemiBold.ttf) format("ttf");
+    src: local("Magnat"), url(../fonts/Magnat-HeadSemiBold.ttf) format("ttf");
   }
 }
 

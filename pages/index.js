@@ -75,13 +75,13 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 mb-20">
-            <p className="flex items-end text-xl text-gray-light mr-24 md:mx-24 lg:mx-36">
+          <div className="grid grid-cols-1 lg:grid-cols-2 mb-20 lg:justify-items-center lg:space-x-20 max-w-7xl">
+            <p className="flex items-end text-xl text-gray-light mr-24 md:w-auto md:mr-52 lg:m-auto lg:mr-32 lg:w-auto">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
               ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <div className="flex space-x-2 items-end justify-end mr-24 lg:mb-10 lg:mt-0 mt-10 lg:mr-72">
+            <div className="flex space-x-2 items-end justify-end lg:mb-10 lg:mt-0 mt-10 lg:w-auto lg:m-auto">
               <h3 className="text-xl text-gray-light text-right inline-block">
                 Conoce {<br />}Sobre Nosotros
               </h3>
@@ -112,7 +112,7 @@ export default function Home() {
                 width="100"
               />
             </div>
-            <p className="text-center text-2xl text-brown font-light md:px-32 lg:px-96 lg:mx-36 mt-6 lg:mt-12 mb-20 lg:mb-40">
+            <p className="text-center text-2xl text-brown font-light mx-auto max-w-xl mt-6 lg:mt-12 mb-20 lg:mb-40">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
               ipsum dolor sit amet, consectetur adipiscing elit.
@@ -132,7 +132,7 @@ export default function Home() {
             </h1>
           </div>
 
-          <div className="grid grid-cols-1 space-y-6 px-4 md:grid-cols-2 lg:grid-cols-2 lg:px-96 lg:space-10 lg:space-y-10 mb-30 justify-items-center mt-10 lg:mx-10">
+          <div className="grid grid-cols-1 space-y-10 px-4 md:grid-cols-2 lg:grid-cols-2 lg:w-auto lg:space-10 lg:space-y-10 mb-30 justify-items-center mt-10 max-w-5xl mx-auto">
             <div className="mx-10 mt-10">
               <h1 className="text-2xl text-center font-semibold">
                 Lorem Ipsum
@@ -181,11 +181,11 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center items-center">
-            <h1 className="z-20 relative text-5xl lg:text-6xl text-center text-brown-dark mt-10 min-w-max">
-              Última Colección
+            <h1 className="z-20 relative text-5xl mx-10 lg:text-6xl text-center text-brown-dark mt-10 min-w-max">
+              Última {<br className="md:hidden lg:hidden"/>} Colección
             </h1>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-items-center lg:space-x-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-items-center lg:space-x-24 -ml-5">
             <Slider images={images} />
             <div className="justify-self-center flex items-center lg:justify-self-start">
               <div className="flex space-x-2 items-end justify-end lg:mr-24 mb-10">
@@ -216,7 +216,7 @@ export default function Home() {
               Preguntas Frecuentes
             </h1>
           </div>
-          <div className="grid grid-cols-1 mt-16 lg:mx-96 md:px-12 lg:px-24 xl:px-24">
+          <div className="grid grid-cols-1 mt-16 1 max-w-7xl">
             {accordionData.map(({ title, content }) => (
               <Faq title={title} content={content} />
             ))}
@@ -236,7 +236,7 @@ export default function Home() {
 
         <form
           onSubmit={handleSubmit}
-          className="grid grid-cols-1 justify-items-center mt-20 lg:px-96 md:mx-12 lg:mx-24 gap-y-3"
+          className="grid grid-cols-1 justify-items-center mt-20 md:max-w-md lg:max-w-xl mx-auto gap-y-3"
         >
           <input
             className="w-full rounded-lg text-xl lg:text-2xl text-brown pl-4 my-2 py-5 bg-brown-light placeholder-brown"
@@ -246,7 +246,7 @@ export default function Home() {
             onChange={(e) => setName(e.target.value)}
           />
           <input
-            className="w-full rounded-lg text-xl lg:text-2xl text-brown pl-4  my-2 py-5 bg-brown-light placeholder-brown"
+            className="w-full rounded-lg text-xl lg:text-2xl text-brown pl-4 my-2 py-5 bg-brown-light placeholder-brown"
             placeholder="Correo electrónico"
             id="email"
             type="email"
