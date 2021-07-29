@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import Accordion from "../components/accordion";
+import Accordion from "../components/Faq";
 import { useState } from "react";
 import { useRouter } from "next/dist/client/router";
 
@@ -232,7 +232,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 mt-16 lg:mx-96 md:px-12 lg:px-24">
             {accordionData.map(({ title, content }) => (
-              <Accordion title={title} content={content} />
+              <Faq title={title} content={content} />
             ))}
           </div>
           {/** divider  */}

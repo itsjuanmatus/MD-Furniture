@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Accordion = ({ title, content }) => {
+const Faq = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
