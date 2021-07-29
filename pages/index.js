@@ -216,7 +216,7 @@ export default function Home() {
               Preguntas Frecuentes
             </h1>
           </div>
-          <div className="grid grid-cols-1 mt-16 1 max-w-7xl">
+          <div className="grid grid-cols-1 mt-16 w-full max-w-4xl">
             {accordionData.map(({ title, content }) => (
               <Faq title={title} content={content} />
             ))}

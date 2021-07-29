@@ -1,29 +1,35 @@
 @tailwind base;
 @tailwind components;
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
 @layer base {
   @font-face {
-    font-family: "Magnat Text";
-    src: local("Magnat"), url(../fonts/Magnat-HeadRegular.ttf) format("ttf");
+    font-family: "MagnatText";
+    src: local("Magnat"), url(../fonts/Magnat-HeadRegular.ttf) format("truetype");
+    font-weight: normal;
   }
   @font-face {
-    font-family: "Magnat Text";
-    src: local("Magnat"), url(../fonts/Magnat-HeadLight.ttf) format("ttf");
+    font-family: "MagnatText";
+    src: local("Magnat"), url(../fonts/Magnat-HeadLight.ttf) format("truetype");
+    font-weight: lighter;
   }
   @font-face {
-    font-family: "Magnat Text";
-    src: local("Magnat"), url(../fonts/Magnat-HeadSemiBold.ttf) format("ttf");
+    font-family: "MagnatText";
+    src: local("Magnat"), url(../fonts/Magnat-HeadSemiBold.ttf) format("truetype");
+    font-weight: bold;
   }
 }
 
 @tailwind utilities;
 
-{/*mobile*/}
+ {
+  /*mobile*/
+}
 @media only screen and (min-device-width: 305px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .picture {
     height: 25rem;
@@ -34,10 +40,10 @@ html, body {
   }
 }
 
-{/*tablet*/}
-@media only screen and (min-device-width: 668px) 
-and (max-device-width: 1024px) 
-and (-webkit-min-device-pixel-ratio: 1) {
+ {
+  /*tablet*/
+}
+@media only screen and (min-device-width: 668px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .picture {
     height: 28rem;
     width: 22rem;
@@ -47,7 +53,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
   }
 }
 
-{/*laptop*/}
+ {
+  /*laptop*/
+}
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 2800px) and (-webkit-min-device-pixel-ratio: 1) {
   .picture {
