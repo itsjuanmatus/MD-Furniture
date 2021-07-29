@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Accordion from "../components/accordion";
+import Accordion from "../Components/accordion";
 import { useState } from "react";
 import { useRouter } from "next/dist/client/router";
 import Table from "../public/images/table.jpg"
