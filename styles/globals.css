@@ -37,7 +37,6 @@ html, body {
 {/*tablet*/}
 @media only screen and (min-device-width: 668px) 
 and (max-device-width: 1024px) 
-and (orientation: portrait) 
 and (-webkit-min-device-pixel-ratio: 1) {
   .picture {
     height: 28rem;
@@ -52,6 +51,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 2800px) and (-webkit-min-device-pixel-ratio: 1) {
   .picture {
+    min-width: 512px;
     height: 48rem;
     width: 32rem;
     object-fit: cover;

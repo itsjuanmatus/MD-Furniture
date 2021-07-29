@@ -9,7 +9,7 @@ export default function Nav() {
         <div className="flex h-44 w-full px-5">
           <div className="flex items-center m-auto">
             <div className="hidden md:block">
-              <div className="flex lg:space-x-10 min-w-full items-center">
+              <div className="flex lg:space-x-0 min-w-full items-center">
                 <a
                   href="#"
                   className="text-brown px-3 py-2 rounded-md text-xl lg:text-2xl font-medium"

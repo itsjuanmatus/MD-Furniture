@@ -57,18 +57,16 @@ export default function Home() {
       </Head>
 
       <main className="w-full mx-auto px-6 sm:px-6 lg:px-28 -mt-10">
-        <div className="grid grid-cols-1">
-          <div className="m-auto">
-            <h1 className="z-20 relative text-5xl lg:text-8xl text-center text-brown mt-10 md:px-44 lg:px-96">
+        <div className="grid grid-cols-1 justify-items-center">
+          <div className="">
+            <h1 className="z-20 relative text-5xl lg:text-8xl text-center text-brown mt-10 md:px-44 lg:px-72 xl:px-96">
               Una idea para un mejor mañana
             </h1>
-            <div className="grid -mt-10 z-0 mb-28 px-96">
-              <Image
+            <div className="flex justify-center -mt-10 z-0 mb-28 lg:px-96">
+              <img
                 className="picture relative rounded-full"
-                src={Table}
+                src='./images/table.jpg'
                 alt="main image"
-                layout='responsive'
-                objectFit='contain'
               />
             </div>
           </div>
